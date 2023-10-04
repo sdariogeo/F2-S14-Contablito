@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contablito - Registro de movimientos de mercadería</title>
+</head>
+
+<body>
+
+    <header>
+        <h3>Registro de Movimientos de Mercadería</h3>
+    </header>
+
+    <main>
+        <form action="/guardar_producto" method="post">
+            <div class="container-transaction">
+                <label for="transaccion">Tipo de transacción:</label>
+                <Select name="Tipo de transaccion" required>
+                    <option disabled selected>-Elige una opción-</option>
+                    <option value="1">Compra</option>
+                    <option value="2">Venta</option>
+                </Select>
+            </div>
+            <br>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <br>
+
+            <div class="container-product">
+                <label for="product">Producto:</label>
+                <Select name="Tipo de transaccion" required>
+                    <option disabled selected>-Elige una opción-</option>
+                    <option value="1">Ladrillo de tejar</option>
+                    <option value="2">Ladrillo macizo</option>
+                    <option value="3">Ladrillo perforado</option>
+                    <option value="4">Ladrillo hueco</option>
+                    <option value="5">Ladrillo aplantillado</option>
+                    <option value="6">Ladrillo caravista</option>
+                    <option value="7">Ladrillo refractario</option>
+                </Select>
+            </div>
+            <br>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            <br>
+
+            <label for="costo">Costo unitario:</label>
+            <input type="number" step="0.01" id="costo" name="costo" required>
+            <br>
+
+            <label for="costo">Subtotal:</label>
+            <input type="number" step="0.01" id="costo" name="costo" required>
+            <br>
+
+            <label for="costo">IVA:</label>
+            <input type="number" step="0.01" id="costo" name="costo" required>
+            <br>
+
+            <label for="costo">Total:</label>
+            <input type="number" step="0.01" id="costo" name="costo" required>
+            <br>
+            <button type="submit">Registrar Producto</button>
+        </form>
+
+    </main>
+
+
+    <footer>
+        <div class="back-btn"> <!--botón para volver a la página principal-->
+            <button onclick="location.href='index.html'">Ir a la página principal</button>
+        </div>
+    </footer>
+</body>
+
+</html>
