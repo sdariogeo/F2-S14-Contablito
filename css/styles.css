@@ -32,9 +32,9 @@ header {
     margin-top: 20px;   
 }
 
-a {
+.boton-link {
     margin: 0;
-    font-size: 36px;
+    font-size: 27px;
     text-decoration: none;
 }
 
@@ -71,6 +71,9 @@ footer {
         font-size: 18px;
     }
 
+    .boton-link{
+        font-size: 30px;
+    }
     .container-header {
         flex-direction: row;
         justify-content: space-between;
