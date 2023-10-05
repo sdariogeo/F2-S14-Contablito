@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contablito - Registro de productos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/products.css">
 </head>
+
 <body>
 
-    <h3>Registro de Productos</h3>
+    <header>
+        <h3>Registro de Productos</h3>
+    </header>
 
-    <form >
-        
-        <label for="identificacion">Identificación:</label>
-        <input type="number" id="identificacion" name="identificacion" maxlength="4" pattern="\d{4}" required>
-        <br>
+    <main>
+        <form>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
+            <label for="identificacion">Identificación:</label>
+            <input type="number" id="identificacion" name="identificacion" maxlength="4" pattern="\d{4}" required>
+            <br>
 
-        <label for="descripcion">Descripción:</label>
-        <textarea id="descripcion" name="descripcion" required></textarea>
-        <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
 
-        <label for="cantidad">Cantidad en Stock:</label>
-        <input type="number" id="cantidad" name="cantidad" required>
-        <br>
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+            <br>
 
-        <label for="costo">Costo:</label>
-        <input type="number" step="0.01" id="costo" name="costo" required>
-        <br>
-        <button type="submit">Registrar Producto</button>
-    </form>
+            <label for="cantidad">Cantidad en Stock:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            <br>
 
-    <div class="back-btn"> <!--botón para volver a la página principal-->
-        <button onclick="location.href='index.html'">Ir a la página principal</button>
-    </div>
+            <label for="costo">Costo:</label>
+            <input type="number" step="0.01" id="costo" name="costo" required>
+            <br>
+            <button type="submit">Registrar Producto</button>
+        </form>
 
+        <div class="back-btn"> <!--botón para volver a la página principal-->
+            <button onclick="location.href='index.html'">Ir a la página principal</button>
+        </div>
+    </main>
 
 </body>
+
 </html>

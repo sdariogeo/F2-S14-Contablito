@@ -1,0 +1,25 @@
+.text-lowstock{
+    text-align: center;
+}
+
+h3{
+    font-size: 24px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.back-btn{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.mailto-duende{
+    text-decoration: none;
+    color: aliceblue;
+}
