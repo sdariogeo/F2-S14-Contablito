@@ -17,6 +17,12 @@ body{
     color: white;
 }
 
+.main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
 .menu{
     background-color: black;
 }
