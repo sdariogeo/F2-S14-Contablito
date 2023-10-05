@@ -17,6 +17,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    height: 3rem;
 }
 
 .container-text{
@@ -36,6 +37,15 @@ header {
     margin: 0;
     font-size: 27px;
     text-decoration: none;
+}
+
+.barra-lateral {
+    background-color: black;
+    height: 150rem;
+    width: 25rem;
+    color: white;
+    position: absolute;
+    
 }
 
 /* Estilos para las secciones */

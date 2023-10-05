@@ -10,33 +10,65 @@
 
 <body>
     <header>
+        
+    </header>
+    
+
+    <main>
         <div class="container-header">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark p-1"> <!--se deja nav fijo-->
+                <div class="container-buscador">
+                  <div id="p-3 mb-2 bg-light text-dark">
+                    <button id="changeTheme" class="btn rounded-fill"> <i class="bi bi-sun"></i> </button><!--se crea para el modo oscuro-->
+                  </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-between" id="barranavegacion">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categorías</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="sell.html">Vender</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="botonCrearCuenta" href="login.html" onclick="openForm()">Crear cuenta</a>
+                      </li>
+                      <li class="nav-item dropdown" id="login-nav">
+                    </li>
+                    
+                  </div>
+                </div>     
+                
+              </nav>
+        </div>
+
+        <div class="barra-lateral">
             <div class="container-text c1">
                 <h1>Contablito</h1>
                 <p>Software de Control de Stock de Mercaderías</p>
             </div>
-            <div class="img-container c2">
-                <img src="img/ladrillos.jpg" alt="foto de ladrillos" class="image-ladrillo">
-            </div>
-        </div>
-    </header>
-
-    <main>
         <section id="registro-productos">
             <a href="products.html" class="boton-link">Registro de Productos</a>
         </section>
 
         <section id="registro-movimientos">
-            <a href="movement.html" class="boton-link">Registro de Movimientos de Mercadería</a>
+            <a href="movement.html" class="boton-link">Movimientos de Mercadería</a>
         </section>
 
         <section id="alertas-stock">
-            <a href="lowstock.html" class="boton-link">Alertas de Bajo Stock</a>
+            <a href="lowstock.html" class="boton-link">Stock</a>
         </section>
 
         <section id="diapositiva-venta">
-            <a href="#" class="boton-link">Prototipo de Contablito</a>
+            <a href="#" class="boton-link">Directorio</a>
         </section>
+        </div>
     </main>
 </body>
 
