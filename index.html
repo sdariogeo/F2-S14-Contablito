@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contablito - Software de Control de Stock de Mercadería</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Archivo CSS para estilos -->
+    <title>Contablito - Control de Stock</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="container-header">
-            <div class="container-text c1">
-                <h1>Contablito</h1>
-                <p>Software de Control de Stock de Mercaderías</p>
+
+    <section class="flex-container">
+        <div class="navbar c1">
+            <nav>
+                <li>Usuario</li>
+            </nav>
+        </div>
+
+
+
+        <div class="menu c2">
+            <div class="title-description">
+                <h2 class="subt">Contablito</h2>
+                <p class="description">Software de Control</p>
+                <p>de Stock de Mercadería</p>
             </div>
-            <div class="img-container c2">
-                <img src="img/ladrillos.jpg" alt="foto de ladrillos" class="image-ladrillo">
+            <div class="container-caja">
+                <div class="caja c3">
+                    <a href="products.html" class="product">Registro de Productos</a>
+                </div>
+                <div class="caja c4">
+                    <a href="movement.html" class="movement">Movimientos de Mercadería</a>
+                </div>
+                <div class="caja c5">
+                    <a href="" class="stock">Stock</a> 
+                </div>
+                <div class="caja c6">
+                    <a href="" class="directory">Directorio</a> 
+                </div>
             </div>
         </div>
-    </header>
 
-    <main>
-        <section id="registro-productos">
-            <a href="products.html" class="boton-link">Registro de Productos</a>
-        </section>
 
-        <section id="registro-movimientos">
-            <a href="movement.html" class="boton-link">Registro de Movimientos de Mercadería</a>
-        </section>
+    </section>
 
-        <section id="alertas-stock">
-            <a href="lowstock.html" class="boton-link">Alertas de Bajo Stock</a>
-        </section>
 
-        <section id="diapositiva-venta">
-            <a href="#" class="boton-link">Prototipo de Contablito</a>
-        </section>
-    </main>
+
 </body>
 
 </html>
